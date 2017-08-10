@@ -49,6 +49,7 @@ brew install python
 brew install sbt
 brew install scala
 brew install tree
+brew install yarn
 
 # Install editor plugins
 apm install \
@@ -61,7 +62,8 @@ latex \
 linter \
 merge-conflicts \
 minimap \
-minimap-cursorline
+minimap-cursorline \
+react
 
 pip install --upgrade pip
 pip install virtualenv
