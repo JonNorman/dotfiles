@@ -30,6 +30,11 @@
 [merge]
 	conflictstyle = diff3
 	tool = vimdiff
+[commit]
+        gpgsign = true
 [user]
 	name = Jon Norman
-	email = jon.norman@guardian.co.uk
+	email = jon.norman@theguardian.com
+        signingkey = CC1E07EC3594D112
+[credential]
+	helper = osxkeychain
