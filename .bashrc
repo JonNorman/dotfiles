@@ -4,9 +4,6 @@ alias ll='ls -l'
 alias la='ls -a'
 alias lal='ls -la'
 alias rm='rm -i'
-alias logdog='git log --decorate --oneline --graph'
-alias goo="~/dev/platform/goo"
-alias creds="~/dev/feria/bin/feria cmsFronts --access s3-read; ~/dev/feria/bin/feria frontend"
 
 # colourify ls
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
@@ -27,22 +24,11 @@ export PROJECT_HOME=$HOME/dev
 source /usr/local/bin/virtualenvwrapper.sh
 
 # User variables
-codegrep() {
-    if [[ $# -eq 0 ]]
-    then
-        echo "Usage: codegrep <pattern> "
-    else
-        grep -nT --colour \
-            --exclude=tags \
-            --exclude=*.o \
-            --exclude=*.so \
-            --exclude=*.tsk \
-            --exclude=*.d \
-            --exclude=*.dd \
-            "$1" *
-    fi
-}
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
+
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

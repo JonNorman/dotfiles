@@ -8,11 +8,11 @@ if [ -f "$HOME/.bashrc" ] ; then
 fi
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/jon_norman/google-cloud-sdk/path.bash.inc ]; then
-  source '/Users/jon_norman/google-cloud-sdk/path.bash.inc'
-fi
+# if [ -f /Users/jon_norman/google-cloud-sdk/path.bash.inc ]; then
+#   source '/Users/jon_norman/google-cloud-sdk/path.bash.inc'
+# fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f /Users/jon_norman/google-cloud-sdk/completion.bash.inc ]; then
-  source '/Users/jon_norman/google-cloud-sdk/completion.bash.inc'
-fi
+# if [ -f /Users/jon_norman/google-cloud-sdk/completion.bash.inc ]; then
+#   source '/Users/jon_norman/google-cloud-sdk/completion.bash.inc'
+# fi

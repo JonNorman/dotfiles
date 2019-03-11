@@ -26,7 +26,6 @@ done
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install applications
-brew cask install atom
 brew cask install gimp
 brew cask install google-chrome
 brew cask install google-drive
@@ -50,20 +49,6 @@ brew install sbt
 brew install scala
 brew install tree
 brew install yarn
-
-# Install editor plugins
-apm install \
-ensime \
-atom-beautify \
-file-icons \
-intentions \
-language-scala \
-latex \
-linter \
-merge-conflicts \
-minimap \
-minimap-cursorline \
-react
 
 pip install --upgrade pip
 pip install virtualenv
