@@ -36,13 +36,16 @@ brew cask install mactex
 brew cask install slack
 brew cask install spectacle
 brew cask install spotify
+brew cask install visual-studio-code
 
 # Install utilities
 brew install awscli
 brew install bash-completion
+brew install coursier/formulas/coursier
 brew install git
 brew install htop
 brew install jq
+brew install nginx
 brew install node
 brew install python
 brew install sbt
@@ -53,6 +56,14 @@ brew install yarn
 pip install --upgrade pip
 pip install virtualenv
 pip install virtualenvwrapper
+
+################
+#Generic Config
+################
+
+# Only require a password for git once an hour
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
 
 #################
 #OS X Preferences
@@ -75,7 +86,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 #Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0.02
+defaults write NSGlobalDomain KeyRepeat -float 2
 
 #Set a shorter Delay until key repeat
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
